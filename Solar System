@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js">
+    </script>
+  </head>
+
+  <body>
+    <a-scene background="color: #0f0342">
+        
+        <!--Uranus-->
+        <a-sphere
+            color="#02ba9b"
+            radius=".75"
+            position="9 0 -5">
+        </a-sphere>
+
+        <!--Ring system-->
+        <a-entity id="uranus-container" position="9 0 -5">
+            <a-sphere id="uranus" radius=".75" color="#73AAF8"></a-sphere>
+            <a-torus id="uranus-ring" color="#65bfb0" segments-tubular="50" radius="2" radius-tubular="0.02" rotation="30 0 150" scale=".45 .75 0.075"></a-torus>
+          </a-entity>
+        
+        <!--Jupiter-->
+        <a-sphere
+            color="#e2c0fa"
+            radius="2"
+            position="15 4 -15">
+        </a-sphere>
+        
+        <!--The Earth-->
+        <a-sphere
+            color="#2e7dc7"
+            radius="1.1"
+            position="8 1 -15">
+        </a-sphere>
+
+        <!--Mercury-->
+        <a-sphere
+            color="#a3561f"
+            radius=".25"
+            position="3 2 -10">
+        </a-sphere>
+        
+        <!--The Sun-->
+        <a-sphere
+            color="#f5c542"
+            radius="5"
+            position="0 0 -20">
+        </a-sphere>
+
+        <a-entity id="planets-orbit" position="0 0 -20">
+        <a-sphere id="sun" radius="5" color="#f5c542"></a-sphere>
+        <a-torus id="planets-orbit1" color="#FFFFFF" opacity="0.5" segments-tubular="50" radius="7" radius-tubular="0.02" rotation="65 120 0" scale=".75 1 0.075"></a-torus>
+        <a-torus id="planets-orbit2" color="#FFFFFF" opacity="0.5" segments-tubular="50" radius="11" radius-tubular="0.02" rotation="65 120 0" scale=".75 1 0.075"></a-torus>
+        <a-torus id="planets-orbit3" color="#FFFFFF" opacity="0.5" segments-tubular="50" radius="13" radius-tubular="0.02" rotation="65 120 0" scale=".75 1 0.075"></a-torus>
+        <a-torus id="planets-orbit4" color="#FFFFFF" opacity="0.3" segments-tubular="50" radius="15" radius-tubular="0.02" rotation="65 120 0" scale=".75 1 0.075"></a-torus>
+        <a-torus id="planets-orbit5" color="#FFFFFF" opacity="0.3" segments-tubular="50" radius="17" radius-tubular="0.02" rotation="65 120 0" scale=".75 1 0.075"></a-torus>
+        <a-torus id="planets-orbit6" color="#FFFFFF" opacity="0.1" segments-tubular="50" radius="19" radius-tubular="0.02" rotation="65 120 0" scale=".75 1 0.075"></a-torus>
+        <a-torus id="planets-orbit7" color="#FFFFFF" opacity="0.1" segments-tubular="50" radius="21" radius-tubular="0.02" rotation="65 120 0" scale=".75 1 0.075"></a-torus>
+        <a-torus id="planets-orbit8" color="#FFFFFF" opacity="0.1" segments-tubular="50" radius="23" radius-tubular="0.02" rotation="65 120 0" scale=".75 1 0.075"></a-torus>
+      </a-entity>
+
+
+        <!--Venus-->
+        <a-sphere
+            color="#b3a754"
+            radius="1.1"
+            position="-7 -1.5 -15">
+        </a-sphere>
+
+        <!--Mars-->
+        <a-sphere
+            color="#75210e"
+            radius=".75"
+            position="-7 -6 -10">
+        </a-sphere>
+
+        <!--Saturn-->
+        <a-sphere
+            color="beige"
+            radius="1.5"
+            position="-13 -8 -10">
+        </a-sphere>
+
+        <!--ring system-->
+        <a-entity id="saturn-container" position="-13 -8 -10">
+            <a-sphere position="0 0 0 " radius=".8" color="#F8EC99" id="saturn"></a-sphere>
+            <a-torus id="saturn-ring-1" color="#57524A" segments-tubular="50" radius="5" radius-tubular="0.1" rotation="60 110 0" scale=".44 .50 0.04"></a-torus>
+            <a-torus id="saturn-ring-2" color="#A29A87" segments-tubular="50" radius="4.4" radius-tubular="0.2" rotation="60 110 0" scale=".44 .44 0.04"></a-torus>
+          </a-entity>
+
+        <!--Neptune-->
+        <a-sphere
+            color="#391a70"
+            radius="1"
+            position="-6 -7 -5">
+        </a-sphere>
+
+
+    </a-scene>
+  </body>
+</html>
